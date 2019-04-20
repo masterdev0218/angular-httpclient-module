@@ -2,10 +2,10 @@
 Sytax: <li *ngFor="let item of items; index as i; trackBy: trackByFn">...</li>
 -->
 <div *ngFor='let user of users$' style="text-align:center">
-  <h2>{{ user.name }} (user id: {{ user.id }})</h2>
-    <p>email: {{ user.email }}</p>
-    <p>phone: {{ user.phone }}</p>
-    <p>website: {{ user.website }}</p>
+  <h2>{{ user.name | uppercase }} (user id: {{ user.id }})</h2>
+    <p><strong>email: </strong>{{ user.email }}</p>
+    <p><strong>phone: </strong>{{ user.phone }}</p>
+    <p><strong>website: </strong>{{ user.website }}</p>
 </div>
 
 <router-outlet></router-outlet>
