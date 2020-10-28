@@ -1,10 +1,10 @@
-# Angular API User Posts
+# :zap: Angular API User Posts
 
 * App to get user data from an external [JSONPlaceholder](https://jsonplaceholder.typicode.com) API.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
 * [General info](#general-info)
 * [Screenshots](#screenshots)
@@ -15,27 +15,25 @@
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
-## General info
+## :books: General info
 
 * Angular httpClient used to get API data.
 
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./img/users.png).
 
-## Technologies
+## :signal_strength: Technologies
 
-* [Angular v8.0.0](https://angular.io/)
+* [Angular v8](https://angular.io/)
+* [Angular CLI v8](https://cli.angular.io/)
+* [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
 
-* [Angular CLI v8.0.1](https://cli.angular.io/)
+## :floppy_disk: Setup
 
-* [RxJS Library v6.5.2](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Setup
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code Examples
+## :computer: Code Examples
 
 * `data.service.ts` using httpClient service with a `getUser()` function to get user details from the API.
 
@@ -61,25 +59,22 @@ export class DataService {
 
 ```
 
-## Features
+## :cool: Features
 
 * Angular httpClient used to get data from an external API.
-
 * Updated to latest Angular 8 version with all dependency conflicts resolved.
-
 * simple angular pipe used: `{{ user.name | uppercase }}` to convert username to uppercase.
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
 * Status: Working.
-
 * To-Do: add mat-cards to improve UI.
 
-## Inspiration
+## :clap: Inspiration
 
 * [Original tutorial: How to use Angular 7 HttpClientModule with REST API](https://www.youtube.com/watch?v=yAT2HHusDDk)
 * [Article on HttpClient: Angular Http — Angular 6 HttpClient Tutorial](https://www.techiediaries.com/angular-http-client/)
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
