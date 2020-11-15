@@ -1,8 +1,8 @@
-<!--The NgForOf directive instantiates a template once per item from an iterable. 
+<!--The NgForOf directive instantiates a template once per item from an iterable.
 Sytax: <li *ngFor="let item of items; index as i; trackBy: trackByFn">...</li>
 -->
 <div *ngFor='let user of users$' style="text-align:center">
-  <h2>{{ user.name | uppercase }} (user id: {{ user.id }})</h2>
+  <h2>{{ user.name | uppercase }}</h2>
     <p><strong>email: </strong>{{ user.email }}</p>
     <p><strong>phone: </strong>{{ user.phone }}</p>
     <p><strong>website: </strong>{{ user.website }}</p>

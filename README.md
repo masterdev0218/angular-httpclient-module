@@ -6,14 +6,17 @@
 
 ## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Angular API User Posts](#zap-angular-api-user-posts)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
 
@@ -25,8 +28,8 @@
 
 ## :signal_strength: Technologies
 
-* [Angular v8](https://angular.io/)
-* [Angular CLI v8](https://cli.angular.io/)
+* [Angular v11](https://angular.io/)
+* [Angular CLI v11](https://cli.angular.io/)
 * [RxJS Library v6](https://angular.io/guide/rx-library) used to [subscribe](http://reactivex.io/documentation/operators/subscribe.html) to the API data [observable](http://reactivex.io/documentation/observable.html).
 
 ## :floppy_disk: Setup
@@ -62,13 +65,13 @@ export class DataService {
 ## :cool: Features
 
 * Angular httpClient used to get data from an external API.
-* Updated to latest Angular 8 version with all dependency conflicts resolved.
+* Updated to latest Angular 11 version with all dependency conflicts resolved.
 * simple angular pipe used: `{{ user.name | uppercase }}` to convert username to uppercase.
 
 ## :clipboard: Status & To-Do List
 
 * Status: Working.
-* To-Do: add mat-cards to improve UI.
+* To-Do: nothing
 
 ## :clap: Inspiration
 

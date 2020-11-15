@@ -1,20 +1,20 @@
 /*
 Injectable: A marker metadata that marks a class as available to Injector for creation.
-The HttpClient in @angular/common/http offers a simplified client HTTP API for Angular applications that rests on the XMLHttpRequest interface exposed by browsers. 
+The HttpClient in @angular/common/http offers a simplified client HTTP API for Angular applications that rests on the XMLHttpRequest interface exposed by browsers.
 THe User model is imported from the user class in user.model.ts
 */
 
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { User } from './user.model';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { User } from "./user.model";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class DataService {
-  apiUrl = 'https://jsonplaceholder.typicode.com/users';
+  apiUrl = "https://jsonplaceholder.typicode.com/users";
 
-  constructor(private _http: HttpClient) { }
+  constructor(private _http: HttpClient) {}
 
   //get array of users from API url
   getUsers() {

@@ -8,6 +8,7 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent implements OnInit{
+  title = 'angular-httpclient-module';
   users$: User[];
 
   constructor(private dataService: DataService) {}
