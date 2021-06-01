@@ -45,20 +45,12 @@
 * `data.service.ts` using httpClient service with a `getUser()` function to get user details from the API.
 
 ```typescript
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { User } from './user.model';
-
-@Injectable({
-  providedIn: 'root'
-})
 export class DataService {
-  apiUrl = 'https://jsonplaceholder.typicode.com/users';
+  apiUrl = "https://jsonplaceholder.typicode.com/users";
 
-  constructor(private _http: HttpClient) { }
-
+  constructor(private _http: HttpClient) {}
   //get array of users from API url
-  getUsers() {
+  getUsers(): Observable<User[]> {
     return this._http.get<User[]>(this.apiUrl);
   }
 }
